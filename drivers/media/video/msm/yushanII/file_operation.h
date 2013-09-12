@@ -1,4 +1,4 @@
-/* Copyright (c) 2010-2011, Code Aurora Forum. All rights reserved.
+/* Copyright (c) 2011, Code Aurora Forum. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -11,11 +11,11 @@
  *
  */
 
-#ifndef __ADRENO_POSTMORTEM_H
-#define __ADRENO_POSTMORTEM_H
 
-struct kgsl_device;
 
-int adreno_postmortem_dump(struct kgsl_device *device, int manual);
+ void file_close(struct file* file);
+ int file_write(struct file* file, unsigned long long offset, unsigned char* data, unsigned int size);
+ int file_read(struct file* file, unsigned long long offset, unsigned char* data, unsigned int size);
+ struct file* file_open(const char* path, int flags, int rights);
 
-#endif 
+ 

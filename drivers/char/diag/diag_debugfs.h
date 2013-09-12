@@ -1,4 +1,4 @@
-/* Copyright (c) 2012, Code Aurora Forum. All rights reserved.
+/* Copyright (c)2012, The Linux Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -8,11 +8,12 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
  */
 
+#ifndef DIAG_DEBUGFS_H
+#define DIAG_DEBUGFS_H
 
+void diag_debugfs_init(void);
+void diag_debugfs_cleanup(void);
 
-int mipi_himax_device_register(struct msm_panel_info *pinfo,
-					u32 channel, u32 panel);
-
+#endif
