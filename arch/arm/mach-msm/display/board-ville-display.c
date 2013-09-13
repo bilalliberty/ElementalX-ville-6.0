@@ -30,7 +30,7 @@
 
 #include "../devices.h"
 #include "../board-8960.h"
-#include "../board-elite.h"
+#include "../board-ville.h"
 
 #define MDP_VSYNC_GPIO 0
 
